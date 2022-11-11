@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #bac5dd;
+    background-size: cover;
+}
+#container{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#header{
+    height: 580px;
+    background: url(../img/header.jpg) no-repeat;
+    position: relative;
+}
+/*text-align: center;
+vertical-align: middle;
+line-height: 90px;       /* The same as your div height */
+#header h1{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 580px;
+}
+#header>ul{
+    background-color: #5473b4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+}
+#header>ul>li::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+#header>ul>li{
+    float: left;
+    width: 19.9999%;
+}
+
+#header>ul>li>a{
+    color: white;
+    text-decoration: none;
+    text-align: center;    
+    display: block;
+    padding: 20px 0;
+}
+#content{    
+    width: 99.9999%;
+    height: 99.9999%;
+}
+.column{
+    background-color: lightgray;
+}
+.column img{
+    width: 49.9999%;
+    float: left;
+    max-height: max-content;
+    }
+/*    
+.column img:last-child{
+    width: 49.9999%;
+    float: right;
+    max-height: max-content;
+    padding-right: 10px;
+}
+*/
+.column::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+#content .column .paragh{
+    width: 49.9999%;
+    padding: 20px;
+    margin-left: 10px;
+    text-align: justify;
+    display: block;
+    overflow: hidden;
+}
+#content .column .paragh:nth-child(2){
+    margin-left: 0;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+#content .column .paragh:last-child{
+    margin-left: 0;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+#footer{
+    height: 145px;
+    background-color: white;
+}
+
+#footer h2{
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 145px;
+}
+/*Lenyíló menü*/
+#header .with-submenu{
+    position: relative;
+}
+#header .with-submenu:hover .submenu{
+    display: block;
+}
+#header .with-submenu::after{
+    content: '🢓';
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.submenu{
+    position: absolute;
+    background-color: #5473b4;
+    display: none;
+    width: 240px;
+    padding: 20px;
+}
+.submenu a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
